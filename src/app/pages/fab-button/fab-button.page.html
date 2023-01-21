@@ -1,0 +1,51 @@
+<app-header titulo="boton menu"> </app-header>
+
+<ion-content class="ion-padding">
+
+
+    <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab> -->
+    <ion-fab slot="fixed" vertical="top" horizontal="start">
+      <ion-fab-button>
+        <ion-icon name="chevron-forward-circle"></ion-icon>
+      </ion-fab-button>
+      <!-- sirve para redirrecionar el opcioonal de botones -->
+      <ion-fab-list side="bottom"> 
+        <ion-fab-button>
+          <ion-icon name="document"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="color-palette"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button>
+          <ion-icon name="globe"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+      <!--  -->
+      <ion-fab-list side="end"> 
+        <ion-fab-button color="facebook">
+          <ion-icon  name="logo-facebook"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="vimeo">
+          <ion-icon  name="logo-vimeo"></ion-icon>
+        </ion-fab-button >
+        <ion-fab-button color="youtube">
+          <ion-icon  name="logo-youtube"></ion-icon>
+        </ion-fab-button >
+        <ion-fab-button color="twitter">
+          <ion-icon  name="logo-twitter"></ion-icon>
+        </ion-fab-button >
+      </ion-fab-list>
+    </ion-fab>
+
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

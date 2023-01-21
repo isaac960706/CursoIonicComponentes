@@ -1,0 +1,36 @@
+<!-- //etiqueta para llamar el ion header desde el modulo creado por consola
+carpeta creada components con::: ionic g m components 
+luego la carpeta con sus componentes con : ionic g component components/header --spec=false-->
+<app-header titulo="Checador">
+  
+</app-header>
+
+
+<ion-content>
+
+  <ion-item>
+    <ion-checkbox slot="start"></ion-checkbox>
+    <ion-label>Themed checkbox</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-checkbox slot="start" [indeterminate]="true"></ion-checkbox>
+    <ion-label>Indeterminate checkbox</ion-label>
+  </ion-item>
+
+  <ion-list >
+    <ion-item *ngFor=" let check of data" (click)="onClick(check)">
+      <ion-label >{{check.nombre}}</ion-label>
+      <ion-checkbox 
+      slot="end" 
+      [color]="check.nombre"
+      [(ngModel)]="check.estado"
+      ></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-button (click)="verESTado()" expand="block">
+    Click me
+  </ion-button>
+
+</ion-content>

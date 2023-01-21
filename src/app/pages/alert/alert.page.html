@@ -1,0 +1,37 @@
+<!-- //etiqueta para llamar el ion header desde el modulo creado por consola
+carpeta creada components con::: ionic g m components 
+luego la carpeta con sus componentes con : ionic g component components/header --spec=false-->
+<app-header titulo="alertas"> </app-header>
+
+<!-- <ion-header>
+  <ion-toolbar>
+    
+    <ion-buttons slot="end">
+   
+      <ion-back-button 
+      defaultHref="/"
+      text="volver"
+      color="danger"
+      mode="ios"
+      icon="add"
+      ></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="ion-padding">
+  <ion-button (click)="presentAlert()" expand="block"
+    >Mostrar alerta</ion-button
+  >
+
+  <ion-button (click)="presentButtonsAlert()" expand="block">botones alerta</ion-button>
+  <p>{{ handlerMessage }}</p>
+  <p>{{ roleMessage }}</p>
+
+  <ion-button (click)="formularioClick()" expand="block" >
+    Fromulario alert
+  </ion-button>
+
+</ion-content>

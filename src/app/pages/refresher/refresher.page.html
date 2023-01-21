@@ -1,0 +1,21 @@
+<app-header titulo="Refrescar"></app-header>
+
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="chevron-down-circle-outline"
+      pullingText="Pull to refresh"
+      refreshingSpinner="circles"
+      refreshingText="Refreshing..."
+    >
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <p>Tira este contenido hacia abajo para activar la actualización</p>
+
+  <ion-list >
+    <ion-item *ngFor="let item of lista; let i=index ">
+      <ion-label class="animate__animated animate__rubberBand">HOla {{i+1}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

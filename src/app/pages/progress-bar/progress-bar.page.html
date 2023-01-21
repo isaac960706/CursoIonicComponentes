@@ -1,0 +1,60 @@
+<!-- no border para borrar la linea -->
+<ion-header class="ion-no-border" translucent="">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" color="danger"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="tertiary">Barra de Progreso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-title>default</ion-title>
+  <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  <!--  -->
+  <ion-title>primary</ion-title>
+  <ion-progress-bar type="indeterminate" color="primary"></ion-progress-bar
+  >
+  <ion-title>secondary</ion-title>
+  <ion-progress-bar type="indeterminate" color="secondary"></ion-progress-bar
+  >
+
+  <ion-title>tertiary</ion-title>
+  <ion-progress-bar type="indeterminate" color="tertiary"></ion-progress-bar
+  >
+
+  <ion-title>success</ion-title>
+  <ion-progress-bar type="indeterminate" color="success"></ion-progress-bar
+  >
+
+  <ion-title>warning</ion-title>
+  <ion-progress-bar type="indeterminate" color="warning"></ion-progress-bar
+  >
+
+  <ion-title>danger</ion-title>
+  <ion-progress-bar type="indeterminate" color="danger"></ion-progress-bar
+  >
+
+  <ion-title>light</ion-title>
+  <ion-progress-bar type="indeterminate" color="light"></ion-progress-bar>
+
+  <ion-title>medium</ion-title>
+  <ion-progress-bar type="indeterminate" color="medium"></ion-progress-bar
+  >
+
+  <ion-title>dark</ion-title>
+  <ion-progress-bar type="indeterminate" color="dark"></ion-progress-bar>
+
+  <br>
+  <ion-title>ejercicio</ion-title>
+  <ion-progress-bar type="determinate" [value]="porcentaje" color="danger"></ion-progress-bar
+  >
+  <ion-list>
+    <ion-item>
+      <ion-range min="0" max="100" (ionChange)="rangeChance($event)">
+        <ion-icon slot="start" name="snow-outline"></ion-icon>
+        <ion-icon slot="end" name="sunny-outline"></ion-icon>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+</ion-content>

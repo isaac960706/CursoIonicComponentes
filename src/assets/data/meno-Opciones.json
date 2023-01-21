@@ -1,0 +1,118 @@
+[
+    {
+        "icon": "contract-outline",
+        "name": "action-sheet",
+        "redirectTo": "/action-sheet"
+    },
+    {
+        "icon": "alert-circle-outline",
+        "name": "Alert",
+        "redirectTo": "/alert"
+    },
+    {
+        "icon": "person-circle-outline",
+        "name": "Avatar",
+        "redirectTo": "/avatar"
+    },
+    {
+        "icon": "game-controller-outline",
+        "name": "Button",
+        "redirectTo": "/button"
+    },
+    {
+        "icon": "card-outline",
+        "name": "Cards",
+        "redirectTo": "/cards"
+    },
+    {
+        "icon": "bag-check-outline",
+        "name": "Check-box",
+        "redirectTo": "/check"
+    },
+    {
+        "icon": "calendar-outline",
+        "name": "Date-Time",
+        "redirectTo": "/datetime"
+    },
+    {
+        "icon": "chevron-forward-circle-outline",
+        "name": "fab-button",
+        "redirectTo": "/fab-button"
+    },
+    {
+        "icon": "grid-outline",
+        "name": "Grid",
+        "redirectTo": "/grid"
+    },
+    {
+        "icon": "swap-vertical-outline",
+        "name": "Scroll-infinite",
+        "redirectTo": "/infinite-scroll"
+    },
+    {
+        "icon": "terminal-outline",
+        "name": "Inputs",
+        "redirectTo": "/input"
+    },
+    {
+        "icon": "list-outline",
+        "name": "List",
+        "redirectTo": "/list"
+    },
+    {
+        "icon": "filter-outline",
+        "name": "List-Reorder",
+        "redirectTo": "/list-reorde"
+    },
+    {
+        "icon": "reload-outline",
+        "name": "Loading",
+        "redirectTo": "/loading"
+    },
+    {
+        "icon": "layers-outline",
+        "name": "Modal",
+        "redirectTo": "/modal"
+    },
+    {
+        "icon": "logo-tableau",
+        "name": "Popovers",
+        "redirectTo": "/popover"
+    },
+    {
+        "icon": "pulse-outline",
+        "name": "ProgressBar",
+        "redirectTo": "/progress-bar"
+    },
+    {
+        "icon": "code-download-outline",
+        "name": "Refresher",
+        "redirectTo": "/refresher"
+    },
+    {
+        "icon": "search-outline",
+        "name": "Search-Bar",
+        "redirectTo": "/searchbar"
+    },
+    {
+        "icon": "barbell-outline",
+        "name": "Segment-Bar",
+        "redirectTo": "/segment"
+    },
+    {
+        "icon": "ellipsis-horizontal-outline",
+        "name": "Slider",
+        "redirectTo": "/slide"
+  
+    },
+    {
+        "icon": "sparkles-outline",
+        "name": "Tabs",
+        "redirectTo": "/tabs"
+    },
+    {
+        "icon": "desktop-outline",
+        "name": "Toast",
+        "redirectTo": "/toast"
+    }
+]

@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start" >
+      <ion-button (click)="MostrarMuenu()">
+        <ion-icon slot="start" name="menu" color="danger"></ion-icon>
+        
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let listita of listados | async" 
+    [routerLink]="listita.redirectTo" >
+      <ion-icon [name]="listita.icon" slot="start" color="tertiary"></ion-icon>
+      {{listita.name}}
+    </ion-item>
+
+    
+  </ion-list>
+
+
+  <!-- BOTONEs -->
+  <!-- <ion-button routerLink="/alert" shape="round" color="danger"
+    >Alerta</ion-button
+  >
+  <ion-button routerLink="/action-sheet" color="success">Accion</ion-button> -->
+  <!-- <ion-button fill="clear">Clear</ion-button>
+  <ion-button fill="outline">Outline</ion-button>
+  <ion-button fill="solid">Solid</ion-button> -->
+
+  
+</ion-content>

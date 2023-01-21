@@ -1,0 +1,25 @@
+<app-header titulo="CALENDARIO"> </app-header>
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Datos de nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime
+        [value]="fNacimiento.toISOString()"
+        display-format="DD MMMM YYYY"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Awesome Label</ion-label>
+      <ion-datetime
+        [value]="fNacimiento.toISOString()"
+        min="2022-03-01T00:00:00"
+        max="2025-05-31T23:59:59"
+      ></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

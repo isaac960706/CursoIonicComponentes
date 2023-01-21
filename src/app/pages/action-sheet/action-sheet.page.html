@@ -1,0 +1,32 @@
+<!-- //etiqueta para llamar el ion header desde el modulo creado por consola
+carpeta creada components con::: ionic g m components 
+luego la carpeta con sus componentes con : ionic g component components/header --spec=false-->
+<app-header titulo="hoja de accion">
+  
+</app-header>
+
+<!-- <ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text="volver"
+        color="primary"
+        mode="ios"
+      ></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>action-sheet</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+
+<ion-content class="ion-padding">
+  
+  <ion-button  (click)="onClick()" expand="block" >
+    Mostrar Action-Sheet
+    <code *ngIf="result"> {{ result }} </code>
+  </ion-button>
+
+</ion-content>
